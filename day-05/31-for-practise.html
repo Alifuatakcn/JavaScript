@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Practise</title>
+</head>
+<body>
+    <input type="number" id="txtDiscountRate">
+    <button onclick="setPrices()">Update</button>
+
+    <ul id="productList">
+        <li>Notebook <span>1500</span>$</li>
+        <li>Monitor <span>500</span>$</li>
+        <li>Keyboard <span>25</span>$</li>
+        <li>Mouse <span>5</span>$</li>
+    </ul>
+
+    <script>
+
+        function setPrices(){
+            const txtDiscountRate = document.querySelector("#txtDiscountRate");
+            const productList = document.querySelectorAll("#productList li span");
+
+            const discountRate = Number(txtDiscountRate.value);
+
+            /* console.log(productList[0].innerText);
+            console.log(productList[1].innerText);
+            console.log(productList[2].innerText);
+            console.log(productList[3].innerText); */
+
+            for(let i=0;i<4;i++ ){
+                const price = productList[i].innerText;
+            }
+
+
+            console.log(productList)
+
+        }
+
+    </script>
+
+</body>
+</html>
