@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let globalScopeVariable = 55;
+
+
+        const test1 = ()=> {
+            let functionScopeVariable = 33;
+            functionScopeVariable++
+            console.log(functionScopeVariable);
+
+            globalScopeVariable--;
+            console.log(globalScopeVariable);
+        }
+
+        test1();
+
+        // console.log(functionScopeVariable); scope dışından erişim olduğu için hata verir
+
+        console.log(globalScopeVariable);
+    </script>
+</body>
+</html>
