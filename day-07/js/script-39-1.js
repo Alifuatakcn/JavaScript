@@ -1,7 +1,7 @@
 (function () {
-    const errMsg = "";
-  
-    const showMessage = (errMsg) => {
-      alert(errMsg);
-    };
-  })();
+  const errMsg = "";
+
+  const showMessage = (errMsg) => {
+    alert(errMsg);
+  };
+})();
