@@ -19,15 +19,22 @@
         <li><a href="#">Link</a></li>
         <li><a href="#">Link</a></li>
         <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
+        <li><a id="lnkAbout" href="https://google.com">About</a></li>
         <li><a href="#">Link</a></li>
       </ul>
     </main>
 
 
     <script>
+        document.getElementById("lnkAbout").addEventListener("click", (e)=>{
+            e.preventDefault();
 
-        
+            // document.querySelector("main .about").style.backgroundColor = "green"
+
+            e.target.closest("main").querySelector(".about").style.backgroundColor = "green"
+
+        });
+
     </script>
   </body>
 </html>
