@@ -5,14 +5,15 @@ document.getElementById("btnShowLowScores").addEventListener("click", ()=>{
     const pointEls = document.querySelectorAll("#tblStudents tbody tr td:last-child");
     
     pointEls.forEach((pointEl, index)=>{
+
         const point = pointEl.innerText;
         if(point < 50){
             document.querySelector(`#tblStudents tbody tr:nth-child(${index+1})`).classList.add("table-danger")
+            //pointEl.closest("tr").classList.add("table-danger")
+
         }       
     })
 } );
-
-
 
 
 
