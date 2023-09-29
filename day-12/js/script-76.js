@@ -18,7 +18,8 @@ document.getElementById("frmLogin").addEventListener("submit", (e)=>{
 
     }
     catch(err){
-        alert(err.message);
+
+          alert(err.message);
     }
     
     
