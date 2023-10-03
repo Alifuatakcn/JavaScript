@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<body>
+    <script>
+
+
+        const getDistance = (a, b, cb) => { 
+            // Alttaki asenkron yapıyı google ın distance API ına bağlandığını farzedelim.
+            setTimeout( ()=>{
+                const result = a - b;
+                cb(result); //calback fonksiyonu çağrıldı
+            }, 3000 );
+        }
+    </script>
+</body>
+</html>
