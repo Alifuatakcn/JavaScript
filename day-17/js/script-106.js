@@ -12,10 +12,14 @@ const searchShows = async (q) => {
 
     const shows = await searchShows(q);
 
+    if(shows.length<=0){
+        document.getElementById("tvShows").innerHTML = `<div class="alert alert-danger">No data returned</div>`
+        return;
+    }
+
     let strHTML = "";
 
     shows.forEach( (item)=> {
-        console.log(item.show)
         strHTML += createShowCard(item.show)
     })
 
